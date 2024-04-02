@@ -29,7 +29,7 @@
        [ngStyle]="{'backgroundColor':click >=5 ? 'blue' : 'transparent'}">
        this is the click numbebr {{click}}</p> -->
 
-      <p *ngFor="let click of arr" [ngStyle]="{'backgroundColor':getColor(click)}">
+      <p *ngFor="let click of arr" [ngStyle]="{'backgroundColor':getColor(click)}" [ngClass]="{white:getColorText(click)}">
         this is the click numbebr {{click}}</p> 
 
 

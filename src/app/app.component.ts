@@ -8,7 +8,11 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet, FormsModule, CommonModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  styles: [`
+    .white{
+      color:white
+    }
+  `],
 })
 export class AppComponent {
   title = 'Assignment3';
@@ -22,6 +26,10 @@ export class AppComponent {
 
   getColor(click:number) {
     return click >= 5 ? 'blue' : 'transparent';
+  }
+
+  getColorText(click:number) {
+    return click >= 5;
   }
 
 
