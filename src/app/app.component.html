@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+
+
+      <!-- 1st solution -->
+      <!-- <button class="btn" (onClick)="onClickBtn()">Display Details</button>
+
+      <p *ngIf="isClicked">Secret Password=tuna</p>
+     -->
+      <!-- second solution -->
+      <!-- <button class="btn btn-primary" (onClick)="isClicked= !isClicked">Display Details</button>
+      <p *ngIf="isClicked">Secret Password=tuna</p> -->
+
+
+
+      <!-- 3rd solution -->
+      <!-- <button class="btn" (click)="onUserClick()">Display Details</button>
+      <p *ngIf="myBoolean">Hello</p> -->
+
+
+      <button class="btn btn-primary" (click)="onClickBtn()">Disply Details</button>
+
+      <p *ngIf="isClicked">Secret Password=tuna</p>
+
+
+      <!-- Max solution -->
+      <!-- <p *ngFor="let click of arr"
+       [ngStyle]="{'backgroundColor':click >=5 ? 'blue' : 'transparent'}">
+       this is the click numbebr {{click}}</p> -->
+
+      <p *ngFor="let click of arr" [ngStyle]="{'backgroundColor':getColor(click)}">
+        this is the click numbebr {{click}}</p> 
+
+
+    </div>
+  </div>
+</div>
